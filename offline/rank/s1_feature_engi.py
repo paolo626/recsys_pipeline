@@ -43,12 +43,13 @@ def get_multi_hot_feat(df, col, prefix=""):
 
 def get_pit_join_feat(df, col, prefix=""):
     mapping = eval(col.upper() + "_MAPPING")
+
     new_cols = []
     for val in mapping.values():
         df[f"{prefix}{val}_imp"] = df[f"{col}_pit"].map(lambda x: x.get(val, [0, 0])[0])
         df[f"{prefix}{val}_clk"] = df[f"{col}_pit"].map(lambda x: x.get(val, [0, 0])[1])
         if len(df[f"{prefix}{val}_imp"].value_counts()) == 1:
-            print("get_pit_join_feat delete feat:", f"{prefix}{val}_imp", f"{prefix}{val}_clk")
+            print("  delete feat:", f"{prefix}{val}_imp", f"{prefix}{val}_clk")
             continue
         new_cols += [f"{prefix}{val}_imp", f"{prefix}{val}_clk"]
     return df, new_cols
@@ -107,6 +108,7 @@ if __name__ == "__main__":
     user_data, new_cols = get_pit_join_feat(user_data, GENRES, prefix="user_g")
     user_dense += new_cols
 
+    print(user_data[f"{GENRES}_pit"])
     # action feat for offline train
     offline_joined = pd.merge(pd.merge(offline_imp, user_data, on=USERID, how="left", right_index=False),
                               item_data, on=ITEMID, how="left", right_index=False)

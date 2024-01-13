@@ -11,7 +11,7 @@
 
 __dummy"
 __dummy_idJml
-‚¹¦€…Â›‚¹¦€…Â›1"$3ccdccf2-c953-498e-b7b6-da3ecf70a0c1*ØÄ¹¦ĞõÛú2Š
+‚¹¦€…Â›‚¹¦€…Â›1"$4e32e28e-d025-4a6e-9524-e559c8c844e0*Œ±Š­ÈùùŠ2›
 ­
 item_fvmlitem"
 item_g1"
@@ -33,11 +33,12 @@ __dummy_idJml
 item_g17"
 item_g182€š:timestamp_field*created_timestamp_columnZ/home/hs/item_entity.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢item_source@b
 
-itemidX
-‚¹¦¸Ë›ÅÄ¹¦ğ²šà
+itemidi
+‚¹¦¸Ë›‡±Š­°·€
 ‘ôš¥˜°Û¹¦
 ¹¦›’¹¦
-›’¹¦¿Ä¹¦2±
+›’¹¦¿Ä¹¦
+¿Ä¹¦„±Š­2Ã
 Õ
 user_fvmluser"
 
@@ -82,11 +83,12 @@ occupation"
 user_g18_imp"
 user_g18_clk2€š:timestamp_field*created_timestamp_columnZ/home/hs/user_entity.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢user_source@b
 
-useridW
-‚¹¦ğ½’œØÄ¹¦ĞÏÁù
+useridi
+‚¹¦ğ½’œŒ±Š­ĞÒ–Š
 ˜ôš¥¸é†d¹¦
 ¹¦›’¹¦
-›’¹¦¿Ä¹¦:­
+›’¹¦¿Ä¹¦
+¿Ä¹¦„±Š­:­
 Œ
 ml_itemmlü
 item_fv
